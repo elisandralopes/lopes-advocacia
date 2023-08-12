@@ -1,8 +1,6 @@
 import '../css/style.css';
 
-document.querySelector('#app').innerHTML = 
-/*html*/
-`
+document.querySelector('#app').innerHTML = /*html*/`
   <div>
   <header>
     <div class="header-content center--container">
