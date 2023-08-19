@@ -331,7 +331,7 @@ header {
 
 .lawyer img {
   width: 250px;
-  height: 320px;
+  /* height: 320px; */
   object-fit: cover;
 
   border-radius: 1.5rem;
