@@ -1,13 +1,15 @@
 import '../css/style.css';
 
-document.querySelector('#app').innerHTML = /*html*/`
+document.querySelector('#app').innerHTML = 
+/*html*/
+`
   <div>
   <header>
     <div class="header-content center--container">
       <a href="index.html" class="logo">
         <img
           class="logo__image"
-          src="../src/assets/img/logo.png"
+          src="../img/logo.png"
           alt=""
         />
         <span class="logo__name">Lopes Advocacia</span>
@@ -58,22 +60,22 @@ document.querySelector('#app').innerHTML = /*html*/`
         <h3 class="areas-content__title">Areas de atuação</h3>
         <div class="area-cards">
           <div class="area-card">
-            <img src="../src/assets/icons/house.svg" alt="" />
+            <img src="../icons/house.svg" alt="" />
             <p>Direito Imobiliário</p>
           </div>
 
           <div class="area-card">
-            <img src="../src/assets/icons/family.svg" alt="" />
+            <img src="../icons/family.svg" alt="" />
             <p>Direito de Família</p>
           </div>
 
           <div class="area-card">
-            <img src="../src/assets/icons/law.svg" alt="" />
+            <img src="../icons/law.svg" alt="" />
             <p>Direito Sucessório</p>
           </div>
 
           <div class="area-card">
-            <img src="../src/assets/icons/article.svg" alt="" />
+            <img src="../icons/article.svg" alt="" />
             <p>Direito de Contratos</p>
           </div>
         </div>
@@ -147,12 +149,12 @@ document.querySelector('#app').innerHTML = /*html*/`
 
             <div class="description-container">
               <div class="description-contact">
-                <img src="../src/assets/icons/call.svg" alt="" />
+                <img src="../icons/call.svg" alt="" />
                 <p>(95) 99175-9456</p>
                 <p>lopesadv@gmail.com.br</p>
               </div>
               <div class="description-resume">
-                <img src="../src/assets/icons/beenhere.svg" alt="" />
+                <img src="../icons/beenhere.svg" alt="" />
                 <p>
                   Sólida experiência na área cível Atendimento especializado e
                   dedicado Agilidade em oferecer soluções jurídicas Compromisso
@@ -162,7 +164,7 @@ document.querySelector('#app').innerHTML = /*html*/`
             </div>
 
             <div class="lawyer">
-              <img src="../src/assets/img/advogada.png" alt="" />
+              <img src="../img/advogada.png" alt="" />
               <p class="laywer__name">Elisandra Lopes</p>
               <p >OAB/RR nº 2302</p>
             </div>
@@ -171,7 +173,7 @@ document.querySelector('#app').innerHTML = /*html*/`
               <div class="logo-adv">
                 <img
                 class="logo__image"
-                src="../src/assets/img/logo.png""
+                src="../img/logo.png""
                 alt=""/>
                 <span class="logo__name">Lopes Advocacia</span>
               </div>
@@ -205,7 +207,6 @@ document.querySelector('#app').innerHTML = /*html*/`
               placeholder="Insira seu nome"
               required
             />
-
             
             <input
               class="input-form"
@@ -216,7 +217,6 @@ document.querySelector('#app').innerHTML = /*html*/`
               placeholder="nome@email.com"
               required
             />
-
             
             <input
               class="input-form"
@@ -226,8 +226,7 @@ document.querySelector('#app').innerHTML = /*html*/`
               placeholder="(00) 00000-0000"
               required
             />
-
-            
+  
             <textarea
               class="textarea-form"
               id="mensage"
@@ -237,8 +236,7 @@ document.querySelector('#app').innerHTML = /*html*/`
               placeholder="Insira sua mensagem ou dúvida"
               required
             ></textarea>
-
-           
+         
             <input
               class="botao"
               type="submit"
