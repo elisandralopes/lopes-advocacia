@@ -1,4 +1,4 @@
-import Button from "../components/button";
+import Button from "../components/button/button";
 
 export default class Main {
     render() {
@@ -6,14 +6,14 @@ export default class Main {
         <section class="main-container">
         <div class="main-content center--container">
           <div class="main-text">
-            <h1 class="main-text__title">Lopes Advocacia</h1>
+            <h1 class="main-text__title">Advocacia cível especializada </h1>
             <p class="main-text__subtitle">
-              Advocacia cível especializada e Correspondência de Serviços Cartorários
+            Destaque em Direito Imobiliário, Família, Sucessório e Contratos
             </p>
           </div>
           <div class="main-buttons">
-            ${Button('Agendar Consulta', '#', 'button--gold')}
-            ${Button('Whatsapp', '#', 'button--gold')}
+            ${Button('Agendar Consulta', '#', 'button--transparent')}
+            ${Button('Whatsapp', '#', 'button--transparent')}
           </div>
         </div>
       </section>`;

@@ -1,23 +1,17 @@
-import Button from "../components/button";
+import Button from "../components/button/button";
+import Logo from "../components/logo/logo";
+
 
 export default class Header {
 
     render() {
         return /*html*/`<header>
         <div class="header-content center--container">
-          <a href="index.html" class="logo">
-            <img
-              class="logo__image"
-              src="../img/logo.png"
-              alt=""
-            />
-            <span class="logo__name">Lopes Advocacia</span>
-          </a>
+
+          ${Logo('Lopes Advocacia', '../img/logo.png', 'index.html')}
+        
     
           <div class="menu">
-            <!--<div class="menu__item">
-              <a href="#atuacao">Atuação</a>
-            </div> -->
             <div class="menu__item">
               <a href="#services">Serviços</a>
             </div>
