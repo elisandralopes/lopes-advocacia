@@ -1,13 +1,13 @@
 import './src/styles/global.css';
-import './src/styles/logo.css';
-import './src/styles/button.css';
-import './src/styles/header.css';
-import './src/styles/main.css';
-import './src/styles/services.css';
-import './src/styles/lawyer.css';
-import './src/styles/contact.css';
-import './src/styles/footer.css';
-
+import './src/components/logo/logo.css';
+import './src/components/button/button.css';
+import './src/components/card-service/card-service.css';
+import './src/header/header.css';
+import './src/main/main.css';
+import './src/services/services.css';
+import './src/lawyer/lawyer.css';
+import './src/contact/contact.css';
+import './src/footer/footer.css';
 
 import Header from './src/header/header';
 import Main from './src/main/main';
@@ -29,4 +29,3 @@ document.querySelector('#services').innerHTML = services.render();
 document.querySelector('#lawyer').innerHTML = lawyer.render();
 document.querySelector('#contact').innerHTML = contact.render();
 document.querySelector('#footer').innerHTML = footer.render();
-
