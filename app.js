@@ -1,7 +1,9 @@
-import './src/styles/global.css';
+import './src/global.css';
 import './src/components/logo/logo.css';
 import './src/components/button/button.css';
 import './src/components/card-service/card-service.css';
+import './src/components/card-contacts/card-contacts.css';
+import './src/components/form/form.css';
 import './src/header/header.css';
 import './src/main/main.css';
 import './src/services/services.css';
