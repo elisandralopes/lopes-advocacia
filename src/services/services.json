@@ -1,43 +1,42 @@
-{ 
+{
    "title": "Conheça nossos principais serviços",
-   "services":[
+   "subtitle": "Serviços jurídicos personalizados, com atendimento presencial e virtual, agível e eficaz.",
+   "services": [
       {
-         "title":"Assessoramento jurídico",
-         "description":"Oferecemos assessoramento jurídico completo, orientação e suporte legal em diversas áreas cíveis."
+         "title": "Assessoramento jurídico",
+         "description": "Oferecemos assessoramento jurídico completo, orientação e suporte legal em diversas áreas cíveis."
       },
       {
-         "title":"Regularização imobiliária",
-         "description":"Oferecemos assessoramento jurídico completo, orientação e suporte legal em diversas áreas cíveis."
+         "title": "Regularização imobiliária",
+         "description": "Oferecemos assessoramento jurídico completo, orientação e suporte legal em diversas áreas cíveis."
       },
       {
-         "title":"Usucapião",
-         "description":"Realizamos uma análise completa da situação de seu imóvel e identificamos as medidas necessárias para regularizar sua situação."
+         "title": "Usucapião",
+         "description": "Realizamos uma análise completa da situação de seu imóvel e identificamos as medidas necessárias para regularizar sua situação."
       },
       {
-         "title":"Inventário",
-         "description":"Assistência em todas as etapas do inventário extrajudicial oujudicial, partilha, aceitação e renúncia de herança."
+         "title": "Inventário",
+         "description": "Assistência em todas as etapas do inventário extrajudicial oujudicial, partilha, aceitação e renúncia de herança."
       },
       {
-         "title":"Divórcio",
-         "description":"Assistência jurídica em divórcio judicial ou extrajudicial, plano de partilha, guarda, pensão."
+         "title": "Divórcio",
+         "description": "Assistência jurídica em divórcio judicial ou extrajudicial, plano de partilha, guarda, pensão."
       },
       {
-         "title":"Contratos",
-         "description":"Elaboração de contratos como compra e venda, de locação, prestação de serviços, termos de responsabilidade, entre outros."
+         "title": "Contratos",
+         "description": "Elaboração de contratos como compra e venda, de locação, prestação de serviços, termos de responsabilidade, entre outros."
       },
       {
-         "title":"União estável",
-         "description":"Reconhecimento e/ou dissolução de união estável extrajudicial e judicial, inclusive pós mortem."
+         "title": "União estável",
+         "description": "Reconhecimento e/ou dissolução de união estável extrajudicial e judicial, inclusive pós mortem."
       },
       {
-         "title":"Curatela",
-         "description":"Nomeação judicial de curador para proteção de pessoas que não possuem capacidade civil de responder pelos próprios atos."
+         "title": "Curatela",
+         "description": "Nomeação judicial de curador para proteção de pessoas que não possuem capacidade civil de responder pelos próprios atos."
       },
       {
-         "title":"Pessoa Jurídica",
-         "description":"Constituição de Pessoas jurídicas de direito privado, como Associações, Igrejas, Sociedades Civis etc."
+         "title": "Pessoa Jurídica",
+         "description": "Constituição de Pessoas jurídicas de direito privado, como Associações, Igrejas, Sociedades Civis etc."
       }
-      
-  ]
+   ]
 }
-
