@@ -64,12 +64,11 @@
   background: #eff5fc;
 }
 
-
 .services-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.6rem;
 }
 
 .services-content__title {
@@ -77,4 +76,8 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.services-content__subtitle {
+  font-size: 1.1rem;
 }
