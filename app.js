@@ -18,16 +18,21 @@ import Lawyer from './src/lawyer/lawyer';
 import Contact from './src/contact/contact';
 import Footer from './src/footer/footer';
 
-const header = new Header();
-const main = new Main();
-const services = new Services();
-const lawyer = new Lawyer();
-const contact = new Contact();
-const footer = new Footer();
+async function App()  {
+    const header = new Header();
+    const main = new Main();
+    const services = new Services();
+    const lawyer = new Lawyer();
+    const contact = new Contact();
+    const footer = new Footer();
+    
+    
+    document.querySelector('#header').innerHTML = await header.render();
+    document.querySelector('#main').innerHTML = await main.render();
+    document.querySelector('#services').innerHTML = services.render();
+    document.querySelector('#lawyer').innerHTML = lawyer.render();
+    document.querySelector('#contact').innerHTML = contact.render();
+    document.querySelector('#footer').innerHTML = footer.render();
+}
 
-document.querySelector('#header').innerHTML = header.render();
-document.querySelector('#main').innerHTML = main.render();
-document.querySelector('#services').innerHTML = services.render();
-document.querySelector('#lawyer').innerHTML = lawyer.render();
-document.querySelector('#contact').innerHTML = contact.render();
-document.querySelector('#footer').innerHTML = footer.render();
+App();

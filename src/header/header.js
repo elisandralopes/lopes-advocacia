@@ -1,10 +1,18 @@
 import Button from '../components/button/button';
 import Logo from '../components/logo/logo';
 import ItemMenu from '../components/item-menu/item-menu';
-import header from './header.json';
+//import header from './header.json';
 
 export default class Header {
-  render() {
+
+  async load() {
+    const response = await fetch('http://localhost:3000/header');
+    return response.json();
+  }
+
+  async render() {
+    const header = await this.load();
+
     return /*html*/ `
         <header>
           <div class="header-content center--container">
