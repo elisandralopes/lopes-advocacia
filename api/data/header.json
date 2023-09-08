@@ -1,8 +1,8 @@
-{   
-    "nameLogo": "Lopes Advocacia 2",
+{
+    "nameLogo": "Lopes Advocacia",
     "urlImage": "../img/logo.png",
     "urlHome": "#",
-    "itensMenu":[
+    "itensMenu": [
         {
             "item": "Serviços",
             "url": "#services"
@@ -16,5 +16,4 @@
             "url": "#contact"
         }
     ]
-    
 }
