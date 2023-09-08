@@ -1,38 +1,41 @@
 import Button from '../components/button/button';
 import Logo from '../components/logo/logo';
 import LawyerContacts from '../components/card-contacts/card-contacts';
-import lawyerData from './lawyer.json';
+import './lawyer.css';
 
 export default class Lawyer {
-  render() {
+  async load() {
+    const response = await fetch('http://localhost:3000/lawyer');
+    return response.json();
+  }
+
+  async render() {
+    const lawyer = await this.load();
+
     return /*html*/ `
       <section class="advocacia-section" id="about">
         <div class="adv-container center--container">
-          <h3 class="adv-container__title">${lawyerData.title}</h3>
+          <h3 class="adv-container__title">${lawyer.title}</h3>
           
           <div class="adv-content">
             <div class="lawyer">
-              <img src="${lawyerData.urlLawyer}" alt="" />
+              <img src="${lawyer.urlLawyer}" alt="" />
             </div>  
 
             <div class="description-container">  
               <div class="description-resume">
-                <img src="${lawyerData.urlIcon2}" alt="" />
-                <p> ${lawyerData.description}</p>
+                <img src="${lawyer.urlIcon2}" alt="" />
+                <p> ${lawyer.description}</p>
               </div>
               
-              ${LawyerContacts(
-                lawyerData.urlIcon,
-                lawyerData.tel,
-                lawyerData.email
-              )}   
+              ${LawyerContacts(lawyer.urlIcon, lawyer.tel, lawyer.email)}   
             </div>
 
             <div class="logo-buttons">
               ${Logo(
-                lawyerData.nameLogo,
-                lawyerData.urlImage,
-                lawyerData.urlHome
+                lawyer.nameLogo,
+                lawyer.urlImage,
+                lawyer.urlHome
               )}            
               <div class="button-adv">
                   ${Button('Agendar Consulta', '#', 'button--gold')}

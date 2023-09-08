@@ -1,9 +1,17 @@
+import './footer.css';
 export default class Footer {
-    render() {
-        return /*html*/ `
+  async load() {
+    const response = await fetch('http://localhost:3000/footer');
+    return response.json();
+  }
+
+  async render() {
+    const footer = await this.load();
+
+    return /*html*/ `
         <div class="center--container">
-                <p>Todos os Direitos Reservados © Lopes Advocacia</p>
+                <p>${footer.text}</p>
         </div>
-        `
-    }
+        `;
+  }
 }

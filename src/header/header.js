@@ -1,10 +1,12 @@
 import Button from '../components/button/button';
 import Logo from '../components/logo/logo';
 import ItemMenu from '../components/item-menu/item-menu';
+import './header.css';
+import '../components/logo/logo.css';
+import '../components/button/button.css';
 //import header from './header.json';
 
 export default class Header {
-
   async load() {
     const response = await fetch('http://localhost:3000/header');
     return response.json();

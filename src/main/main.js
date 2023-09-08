@@ -1,5 +1,5 @@
-import Button from "../components/button/button";
-
+import Button from '../components/button/button';
+import './main.css';
 export default class Main {
   async load() {
     const response = await fetch('http://localhost:3000/main');
@@ -9,7 +9,7 @@ export default class Main {
   async render() {
     const main = await this.load();
 
-    return /*html*/`
+    return /*html*/ `
       <section class="main-container">
       <div class="main-content center--container">
         <div class="main-text">
