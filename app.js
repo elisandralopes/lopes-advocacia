@@ -1,11 +1,11 @@
 import './src/global.css';
 
-import Header from './src/header/header';
-import Main from './src/main/main';
-import Services from './src/services/services';
-import Lawyer from './src/lawyer/lawyer';
-import Contact from './src/contact/contact';
-import Footer from './src/footer/footer';
+import Header from './src/header';
+import Main from './src/main';
+import Services from './src/services';
+import Lawyer from './src/lawyer';
+import Contact from './src/contact';
+import Footer from './src/footer';
 
 async function App() {
   const header = new Header();
