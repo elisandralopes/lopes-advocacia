@@ -1,11 +1,49 @@
+window.handleSubmit = async e => {
+  e.preventDefault();
+
+  const form = document.getElementById('contactForm');
+  const formData = new FormData(form);
+  const webhookUrl = 'https://5d30bd84ad320937fbfa84b59e89ae0a.m.pipedream.net';
+
+  fetch(webhookUrl, {
+    method: 'POST',
+    body: JSON.stringify(Object.fromEntries(formData)),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then(response => {
+      if (response.ok) {
+        alert('Data sent successfully to webhook!');
+        form.reset();
+      } else {
+        alert('Failed to send data to webhook');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred while sending data to the webhook');
+    });
+};
+
 export default function Contactform() {
+  // Aguarde o carregamento do DOM
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+
+    // Tornar handleSubmit acessível no escopo do elemento HTML
+    form.onsubmit = async e => {
+      e.preventDefault();
+      handleSubmit(e); // Chame a função handleSubmit quando o formulário for enviado
+    };
+  });
+
   return /*html*/ `
     
     <form
         class="form-content-info center--container"
-        action="mailto: lopesadv@gmail.com"
-        method="post"
-        enctype="text/plain"
+        id="contactForm"
+        onsubmit="event.preventDefault(); handleSubmit(event);"
     >
     
         <input
@@ -13,7 +51,7 @@ export default function Contactform() {
             id="name"
             type="text"
             name="name"
-            placeholder="Nome Completo*"
+            placeholder="Nome Completo"
             required
         />
         
@@ -23,7 +61,7 @@ export default function Contactform() {
             type="email"
             name="email"
             size="30"
-            placeholder="Email*"
+            placeholder="Email"
             required
         />
         
@@ -32,7 +70,7 @@ export default function Contactform() {
             id="phone"
             type="tel"
             name="phone"
-            placeholder="Telefone*"
+            placeholder="Telefone"
             required
         />
 
@@ -40,8 +78,8 @@ export default function Contactform() {
             class="input-form"
             id="subject"
             type="text"
-            name="text"
-            placeholder="Assunto*"
+            name="subject"
+            placeholder="Assunto"
             required
         />
 
@@ -51,18 +89,16 @@ export default function Contactform() {
             name="message"
             cols="30"
             rows="5"
-            placeholder="Mensagem*"
+            placeholder="Mensagem"
             required
         ></textarea>
 
-        <input
+        <button
             class="button--gold"
             type="submit"
-            value="Enviar"
             class="button-pattern--blue"
-        />
-        </div>
-
-        
+        >
+            Enviar
+        </button>
     </form>`;
 }
